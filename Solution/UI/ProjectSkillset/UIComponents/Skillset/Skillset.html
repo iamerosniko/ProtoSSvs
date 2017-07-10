@@ -1,0 +1,39 @@
+﻿<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Skillset</h3>
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="profile-content">
+            <!--profile component here-->
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="dep-skillset">
+            <!--department skillsets component here-->
+        </div>
+    </div>
+</div>
+<div class="save-bar">
+    <!--save bar component here-->
+</div>
+
+<script>
+    $(function () {
+        //profile container
+        var $prof_cont = $('.profile-content');
+        //load content to profile container
+        $prof_cont.load('../ProjectSkillset/UIComponents/Skillset/ProfileContent.html');
+        //department skillset container
+        var $dep_cont = $('.dep-skillset');
+        //load content to skillset container
+        $dep_cont.load('../ProjectSkillset/UIComponents/Skillset/DepartmentSkillset.html');
+        //save bar container
+        var $save_bar = $('.save-bar');
+        //load content to save bar container
+        $save_bar.load('../ProjectSkillset/UIComponents/Common/SaveBar.html');
+    });
+</script>
