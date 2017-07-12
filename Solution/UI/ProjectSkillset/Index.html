@@ -27,8 +27,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#p1" data-toggle="tab" class="lnk-search"><i class="fa fa-search"></i>&nbsp;Search</a></li>
-                    <li><a href="#p2" data-toggle="tab" class="lnk-skillset"><i class="fa fa-list-alt"></i>&nbsp;Skillset</a></li>
-                    <li class="active"><a href="#p3" data-toggle="tab" class="lnk-maintenance"><i class="fa fa-cogs"></i>&nbsp;Maintenance</a></li>
+                    <li class="active"><a href="#p2" data-toggle="tab" class="lnk-skillset"><i class="fa fa-cogs"></i>&nbsp;Skillset</a></li>
+                    <li><a href="#p3" data-toggle="tab" class="lnk-maintenance"><i class="fa fa-wrench"></i>&nbsp;Maintenance</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i class="fa fa-user-circle"></i>&nbsp;Hello, Albert Rick!</a></li>
@@ -44,9 +44,8 @@
             //container
             var $cont = $('.main-body');
             //load content to container
-            //$cont.load('../ProjectSkillset/UIComponents/Skillset/Skillset.html');
-            $cont.load('../ProjectSkillset/UIComponents/Maintenance/Maintenance.html');
-
+            $cont.load('../ProjectSkillset/UIComponents/Skillset/Skillset.html');
+            
             //link search
             var $lnk_search = $('.lnk-search');
             $lnk_search.click(function () {

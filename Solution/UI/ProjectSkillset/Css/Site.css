@@ -158,7 +158,7 @@ input:checked + .slider:before {
 }
 
 .navbar-blue_2 {
-  border-bottom: 2px solid #2196F3;
+    border-bottom: 3px solid #2196F3;
 }
 
 /*triangle denote*/
@@ -176,7 +176,7 @@ input:checked + .slider:before {
 
     .navbar-nav li.active:after, .navbar-nav li.active:before {
 	    bottom: 0%;
-        margin-bottom: -2px;
+        margin-bottom: -3px;
 	    left: 50%;
 	    border: solid transparent;
 	    content: " ";
