@@ -2,8 +2,26 @@
     <div class="container-fluid">
         <form class="navbar-form navbar-right">
             <a href="#" class="btn btn-primary btn-sm pull-right">
-                <i class="fa fa-save"></i>&nbsp;Update <!--Save-->
+                <i class="fa fa-save"></i>&nbsp;Save
             </a>
         </form>
     </div>
 </nav>
+<div class="modal_confirm">
+    <!--modal dialog component here-->
+</div>
+
+<script>
+    $(function () {
+        //modal container
+        var $modal_confirm = $('.modal_confirm');
+        //load content to modal container
+        $modal_confirm.load('../ProjectSkillset/UIComponents/Common/ModalConfirm.html');
+
+        //save-bar should call the modal everytime that saves a record.
+        //setTimeout(function () {
+        //    $('.modal p').text('Do you want to save this record?');
+        //    $('.save-navbar a').attr('data-toggle', 'modal').attr('data-target', '.modal');
+        //}, 1000);
+    });
+</script>

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../ProjectSkillset/Css/bootstrap-3.3.7-dist/css/bootstrap-theme.css" />
     <link rel="stylesheet" href="../ProjectSkillset/Css/font-awesome-4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="../ProjectSkillset/Css/Checkboxes.css" />
+    <link rel="stylesheet" href="../ProjectSkillset/Css/textcss/normalize.css" />
+    <link rel="stylesheet" href="../ProjectSkillset/Css/textcss/set2.css" />
     <link rel="stylesheet" href="../ProjectSkillset/Css/Site.css" />
     <script src="../ProjectSkillset/Scripts/jquery-3.1.1.js"></script>
     <script src="../ProjectSkillset/Css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
@@ -20,13 +22,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Skillset Database</a>
+                <a class="navbar-brand" href="Index.html">Skillset Database</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#" class="lnk-search"><i class="fa fa-search"></i>&nbsp;Search</a></li>
-                    <li><a href="#" class="lnk-skillset"><i class="fa fa-list-alt"></i>&nbsp;Skillset</a></li>
-                    <li><a href="#" class="lnk-maintenance"><i class="fa fa-cogs"></i>&nbsp;Maintenance</a></li>
+                    <li><a href="#p1" data-toggle="tab" class="lnk-search"><i class="fa fa-search"></i>&nbsp;Search</a></li>
+                    <li><a href="#p2" data-toggle="tab" class="lnk-skillset"><i class="fa fa-list-alt"></i>&nbsp;Skillset</a></li>
+                    <li class="active"><a href="#p3" data-toggle="tab" class="lnk-maintenance"><i class="fa fa-cogs"></i>&nbsp;Maintenance</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i class="fa fa-user-circle"></i>&nbsp;Hello, Albert Rick!</a></li>
@@ -42,7 +44,8 @@
             //container
             var $cont = $('.main-body');
             //load content to container
-            $cont.load('../ProjectSkillset/UIComponents/Skillset/Skillset.html');
+            //$cont.load('../ProjectSkillset/UIComponents/Skillset/Skillset.html');
+            $cont.load('../ProjectSkillset/UIComponents/Maintenance/Maintenance.html');
 
             //link search
             var $lnk_search = $('.lnk-search');
