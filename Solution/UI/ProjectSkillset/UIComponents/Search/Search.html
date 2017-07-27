@@ -16,21 +16,21 @@
             <br />
             <div class="row">
                 <div class="col-md-12">
-                    <label class="control-label">Search by Associate(s)</label>
+                    <label class="control-label"><input type="radio" name="search_rdb" value="assoc"/>&nbsp;Search by Associate(s)</label>
                     <select class="form-control input-sm"></select>
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-12">
-                    <label class="control-label">Search by Skillset(s)</label>
+                    <label class="control-label"><input type="radio" name="search_rdb" value="skillset"/>&nbsp;Search by Skillset(s)</label>
                     <select class="form-control input-sm"></select>
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-12">
-                    <label class="control-label">Search by Department(s)</label>
+                    <label class="control-label"><input type="radio" name="search_rdb" value="department"/>&nbsp;Search by Department(s)</label>
                     <select class="form-control input-sm"></select>
                 </div>
             </div>
@@ -57,6 +57,22 @@
         </div>
         <div class="col-md-9">
             <!--report content here-->
+            <div class="report-content"></div>
         </div>
     </div>
 </div>
+
+<script>
+    $(function () {
+        $('.btn').click(function () {
+            var $report_content = $('.report-content');
+            var checked_value = $('input[name="search_rdb"]:checked').val();
+            switch (checked_value)
+            {
+                case 'assoc':
+                    $report_content.empty().load('../ProjectSkillset/UIComponents/Search/SearchByAssociate.html');
+                    break;
+            }
+        });
+    });
+</script>
